@@ -5,11 +5,6 @@
 html{
 	background-color: black;
 	font-family: 'Roboto', sans-serif;
-	/*
-	min-width: 960px;
-	background-image: url('img/bg.png'); 
-  	background-size: cover;
-	  */
 }
 
 #scroll{
@@ -26,12 +21,6 @@ body{
 
 	position: -webkit-sticky; /* Safari */
   	position: sticky;
-	
-	/*
-	margin: 0px auto;
-	padding-top: 0%;
-	padding-bottom: 2%;
-	*/
 }
 
 h1{
@@ -273,7 +262,7 @@ p a{
 }
 
 /* DUMBASS PHONE SHIT */
-@media screen and (max-width: 986px) , screen and (max-height: 700px) {
+@media screen and (max-width: 960px) {
 	.left-image {
 		grid-column-start: 1;
 		grid-column-end: 5;
@@ -309,8 +298,8 @@ p a{
 		/* Crop */
 		width: 160vw;
 	
-		margin-top: -100px;
-		margin-left: -300px;
+		margin-top: -80px;
+		margin-left: -320px;
 	}
 	
 	.right-image h1{
@@ -320,13 +309,11 @@ p a{
 
 	/*FOOTER SECTION*/
 	#footer{
-		margin-top: -90px;
-		margin-left: -20vw;
-		width: 160vw;
-	}
+		margin: auto;
+}
 
 	#footer p{
-		font-size: 24px;
+		font-size: 18px;
 	}
 
 	#footer img{
@@ -335,6 +322,33 @@ p a{
 
 	#iconRow{
 		width: 400px;
-		margin-left: 62vw;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	.right-image {
+		/* Crop */
+		width: 160vw;
+	
+		margin-top: -80px;
+		margin-left: -250px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.left-image {
+		/* Crop */
+		width: 120vw;
+	
+		margin-top: -40px;
+		margin-left: -30px;
+	}
+
+	.right-image {
+		/* Crop */
+		width: 160vw;
+	
+		margin-top: -80px;
+		margin-left: -160px;
 	}
 }
