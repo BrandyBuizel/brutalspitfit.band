@@ -64,10 +64,12 @@ h3{
 	grid-column-end: 5;
 	grid-row-start: 1;
 
-	background-image: url("img/run.png");
+	background-image: url("../img/run.png");
 	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: cover;
+	
+	position: sticky;
 
 	z-index: 2;
 	height: 100vh;
@@ -119,10 +121,12 @@ h3{
 	grid-column-end: 5;
 	grid-row-start: 1;
 
-	background-image: url("img/loop.png");
+	background-image: url("../img/loop.png");
 	background-position: right top;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	position: sticky;
 
 	z-index: 1;
 	height: 100vh;
@@ -336,6 +340,10 @@ p a{
 }
 
 @media screen and (max-width: 480px) {
+	#content {
+		margin-top: -2em;
+	}
+
 	.left-image {
 		/* Crop */
 		width: 120vw;
@@ -349,6 +357,6 @@ p a{
 		width: 160vw;
 	
 		margin-top: -80px;
-		margin-left: -160px;
+		margin-left: -150px;
 	}
 }
